@@ -1,0 +1,44 @@
+# Nikolas S Fisher
+# 
+#
+#
+#
+#
+#
+#
+import random
+
+guess = random.randrange(0,10)
+
+userguess = int(input("Please guess a number between 0-10:\n"))
+
+for num in range(0,10):
+
+    if userguess >= guess:
+        print("guess lower number ")
+
+        userguess = int(input("Please guess again:\n"))
+
+        if userguess >= guess:
+            print("guess a lower number ")
+
+        elif userguess <= guess:
+            print("guess higher numer")
+
+        elif userguess == guess:
+            print("you got it right")
+
+        else:
+            exit()
+    elif userguess <= guess:
+        print("guess higher number")
+
+        userguess = int(input("please guess again:\n"))
+
+
+
+    elif userguess == guess:
+        print("you picked the right number")
+
+    else:
+        exit()
