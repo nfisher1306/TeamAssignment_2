@@ -1,3 +1,17 @@
 # Name: Robert Brown, Nikolas Fisher, Steve Marin
 # Date: 11/13/22
 # Program function: take number form user, guess random number based on high or low inputs until correct
+
+
+userguess = int(input("Please guess a number between [1-10]:\n")
+
+while userguess != guess:
+    if userguess > guess:
+        print("Please choose a lower number")
+
+    else:
+        print("Please choose a higher number")
+
+    userguess = int(input("Please guess again:\n"))
+
+print("You guessed correctly")
